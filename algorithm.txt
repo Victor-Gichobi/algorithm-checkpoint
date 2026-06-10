@@ -1,0 +1,36 @@
+Algorithm reads_sentence
+
+Variables
+    C : character
+    Length = 0
+    Words = 1
+    Vowels = 0
+
+    Begin
+
+        Repeat
+
+        Read (C)
+
+        If C <> '.' Then
+
+          Length =Length + 1
+
+    If C = ' ' Then
+      Words = Words + 1
+      EndIf
+
+      If c= 'a' Or C = 'i' Or C = 'o' Or C = 'u'
+               Or C = 'A' Or C = 'E' Or C = 'I' Or C = 'O' Or C = 'U' Then
+                Vowels ← Vowels + 1
+            EndIf
+
+        EndIf
+
+    Until C = '.'
+
+    Write("Length = ", Length)
+    Write("Words = ", Words)
+    Write("Vowels = ", Vowels)
+
+End
